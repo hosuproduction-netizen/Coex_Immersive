@@ -3,14 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>세미나 신청 — 하이픽셀플러스</title>
+<title>URSA Cine Immersive 체험신청 </title>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700;800&family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 :root{--bg:#0c0c0d;--surface:#141416;--surface2:#1c1c1f;--border:rgba(255,255,255,0.07);--border-focus:rgba(255,255,255,0.22);--text:#f5f4f2;--text2:#888785;--text3:#444342;--accent:#a1b1f2;--accent-dim:rgba(161,177,242,0.08);}
 html{scroll-behavior:smooth;}
 body{font-family:'Noto Sans KR',sans-serif;background:var(--bg);color:var(--text);min-height:100vh;display:flex;flex-direction:column;}
-body::before{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");}
+body::before{content:'';position:absolute;inset:0;z-index:0;pointer-events:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='300' height='300' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");}
 .page{position:relative;z-index:1;display:grid;grid-template-columns:1fr 1fr;min-height:100vh;}
 .left{background:var(--surface);padding:60px 56px;display:flex;flex-direction:column;justify-content:space-between;border-right:1px solid var(--border);position:sticky;top:0;height:100vh;overflow-y:auto;}
 .left-bg{position:absolute;inset:0;z-index:0;background-image:url('https://images.blackmagicdesign.com/images/products/blackmagicursacineimmersive/landing/includes/includes-sm.jpg?_v=1756980813');background-size:180%;background-repeat:no-repeat;background-position:27% 0%;opacity:0.48;}
@@ -34,7 +34,7 @@ body::before{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;bac
 .left-footer{font-size:15px;color:rgba(255,255,255,0.4);line-height:1.6;}
 .deco-ring{position:absolute;right:-120px;bottom:-120px;width:400px;height:400px;border-radius:50%;border:1px solid rgba(161,177,242,0.06);pointer-events:none;z-index:0;}
 .deco-ring::after{content:'';position:absolute;inset:40px;border-radius:50%;border:1px solid rgba(161,177,242,0.04);}
-.right{background:var(--bg);padding:60px 56px;display:flex;flex-direction:column;justify-content:flex-start;overflow-y:auto;}
+.right{background:var(--bg);padding:60px 56px;display:flex;flex-direction:column;justify-content:flex-start;overflow-y:auto;isolation:isolate;}
 .form-header{margin-bottom:32px;}
 .form-header h2{font-size:26px;font-weight:700;margin-bottom:8px;letter-spacing:-.3px;color:#ffffff;}
 .form-header p{font-size:16px;color:rgba(255,255,255,0.7);line-height:1.65;}
