@@ -110,7 +110,7 @@ select option{background:#1c1c1f;}
   .consent-options{grid-template-columns:1fr !important;}
   .slot-grid{grid-template-columns:40px repeat(4,1fr);gap:3px;}
   .slot-time-label{font-size:10px;padding-right:3px;}
-  .slot-cell label{min-height:48px;padding:7px 2px;font-size:12px;}
+  .slot-cell label{min-height:40px;padding:7px 2px;font-size:12px;}
   .slot-avail{font-size:10px;}
   .slot-day-name{font-size:13px;}
   .slot-day-sub{font-size:10px;}
@@ -211,7 +211,7 @@ var DAYS = [
   { label: '5/14', sub: '목', key: '5월 14일(목)' },
   { label: '5/15', sub: '금', key: '5월 15일(금)' }
 ];
-var TIMES = ['10:30', '11:30', '12:30', '13:30', '14:30', '15:30', '16:30'];
+var TIMES = ['10:30', '11:00', '11:30', '12:00', '12:30', '13:00', '13:30', '14:00', '14:30', '15:00', '15:30', '16:00', '16:30'];
 
 function slotId(dayKey, time) {
   return dayKey + ' ' + time;
